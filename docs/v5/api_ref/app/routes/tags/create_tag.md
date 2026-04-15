@@ -1,0 +1,30 @@
+---
+{title: POST /, description: API Reference for app.routes.tags.create_tag, section_id: app_routes_tags_create_tag, section_type: function_ref}
+---
+# POST /
+
+Create a new tag.
+
+    Expects JSON with ``name`` (required) and optional ``color``.
+
+Creates a new tag for organizing bookmarks, requiring a unique name and an optional color code.
+
+## Endpoint
+
+```
+POST /
+```
+
+## Request Body
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **name** | `string` | The unique name of the tag to be created. |
+| **color** | `string` | The hex code or name of the color associated with the tag. |
+
+## Response
+
+| Status | Description |
+|--------|-------------|
+| **201** | The tag was successfully created. Returns `object`. |
+| **400** | The request was invalid, likely due to a missing name or a validation error from the service. Returns `object`. |
