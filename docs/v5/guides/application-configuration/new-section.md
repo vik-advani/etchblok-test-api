@@ -5,6 +5,6 @@ section_type: guide
 ---
 # New Section
 
-This is a test section, i want to see if it gets published. 
+This is a test section, i want to see if it gets published. I updated it in github
 
 
