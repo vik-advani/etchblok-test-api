@@ -1,0 +1,28 @@
+---
+{title: GET /api/bookmarks/, description: API Reference for app.routes.bookmarks.list_bookmarks, section_id: app_routes_bookmarks_list_bookmarks, section_type: function_ref}
+---
+# GET /api/bookmarks/
+
+Return a paginated list of bookmarks.
+
+Retrieves a paginated collection of bookmarks, with optional filtering by status.
+
+## Endpoint
+
+```
+GET /api/bookmarks/
+```
+
+## Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| **page** | `int` = 1 | The page number to retrieve for pagination, starting from 1. |
+| **per_page** | `int` = 25 | The number of bookmark items to return per page, with a maximum limit of 100. |
+| **status** | `string` | A filter to restrict results to bookmarks with a specific state, such as active, archived, or trashed. |
+
+## Response
+
+| Status | Description |
+|--------|-------------|
+| **200** | Successfully retrieved the list of bookmarks. Returns `object`. |
